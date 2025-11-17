@@ -16,7 +16,7 @@ const cardsContainer = document.getElementById("cards-container");
 
 changeTitleBtn.addEventListener("click", () => {
   if (pageTitle.innerText === "DOM Manipulation Playground") {
-    pageTitle.innerText = "DOM in Action";
+    pageTitle.innerText = "DOM is Working";
     subtitle.innerText = "Nice! You changed the DOM using JavaScript!";
   } else {
     pageTitle.innerText = "DOM Manipulation Playground";
