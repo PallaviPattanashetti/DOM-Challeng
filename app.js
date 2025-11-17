@@ -14,7 +14,6 @@ const clearCardsBtn = document.getElementById("clear-cards-btn");
 const customTextInput = document.getElementById("custom-text-input");
 const cardsContainer = document.getElementById("cards-container");
 
-// 2. Change title text
 changeTitleBtn.addEventListener("click", () => {
   if (pageTitle.innerText === "DOM Manipulation Playground") {
     pageTitle.innerText = "DOM in Action";
@@ -25,20 +24,19 @@ changeTitleBtn.addEventListener("click", () => {
   }
 });
 
-// 3. Change background color randomly
+
 colorBtn.addEventListener("click", () => {
   const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
   document.body.style.backgroundColor = randomColor;
 });
 
-// 4. Increase font size
+
 increaseFontBtn.addEventListener("click", () => {
   const style = window.getComputedStyle(document.body);
   const currentSize = parseFloat(style.fontSize);
   document.body.style.fontSize = (currentSize + 2) + "px";
 });
 
-// 5. Decrease font size (min 10px)
 decreaseFontBtn.addEventListener("click", () => {
   const style = window.getComputedStyle(document.body);
   const currentSize = parseFloat(style.fontSize);
@@ -47,22 +45,23 @@ decreaseFontBtn.addEventListener("click", () => {
   }
 });
 
-// 6. Toggle subtitle visibility
+// Toggle subtitle visibility
 toggleSubtitleBtn.addEventListener("click", () => {
-  subtitle.style.display = (subtitle.style.display === "none" ? "block" : "none");
+  subtitle.classList.toggle("hidden");
 });
 
-// 7. Toggle subtitle bold styling
+// Toggle subtitle bold styling
 makeSubtitleBoldBtn.addEventListener("click", () => {
-  subtitle.style.fontWeight = (subtitle.style.fontWeight === "bold" ? "normal" : "bold");
+  subtitle.classList.toggle("bold");
 });
 
-// 8. Toggle border around title
+// Toggle border on the title
 addBorderTitleBtn.addEventListener("click", () => {
-  pageTitle.style.border = pageTitle.style.border ? "" : "2px solid black";
+  pageTitle.classList.toggle("bordered");
 });
 
-// 9. Helper to create card with delete button
+
+
 function createCard(text) {
   const card = document.createElement("div");
   card.className = "card";

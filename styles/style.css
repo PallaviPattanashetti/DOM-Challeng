@@ -23,3 +23,16 @@ body {
     margin-right: 8px;
     max-width: 300px;
   }
+
+
+  .hidden {
+  display: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bordered {
+  border: 2px solid black;
+}
