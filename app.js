@@ -75,13 +75,12 @@ function createCard(text) {
   return card;
 }
 
-// 10. Add predefined card
+
 addCardBtn.addEventListener("click", () => {
   const card = createCard("I am a dynamically created card");
   cardsContainer.appendChild(card);
 });
 
-// 11. Add custom text card
 addCustomCardBtn.addEventListener("click", () => {
   const value = customTextInput.value.trim();
   if (!value) return;
@@ -90,7 +89,7 @@ addCustomCardBtn.addEventListener("click", () => {
   customTextInput.value = "";
 });
 
-// 12. Clear all cards
+
 clearCardsBtn.addEventListener("click", () => {
   cardsContainer.innerHTML = "";
 });
