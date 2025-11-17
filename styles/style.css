@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  button {
+    margin: 5px 8px 5px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  .card {
+    background: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 8px 0;
+    padding: 10px;
+    max-width: 300px;
+  }
+  .controls {
+    margin-bottom: 20px;
+  }
+  input {
+    padding: 8px;
+    margin-right: 8px;
+    max-width: 300px;
+  }
